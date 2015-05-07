@@ -220,7 +220,7 @@ function tincanlaunch_get_launch_url($registrationuuid) {
 	        "auth" => "Basic ".$basicauth,
 	        "actor" => json_encode(tincanlaunch_getactor()),
 	        "registration" => $registrationuuid,
-	        "activity_id" => $tincanlaunchsettings['tincanactivityid']
+	        "activity_id" => $tincanlaunch->tincanactivityid
 	    ), 
 	    '', 
 	    '&'
