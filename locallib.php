@@ -141,12 +141,14 @@ function tincanlaunch_get_launch_url($registrationuuid) {
 
         // Learning Locker.
         case "0":
+/*
             $creds = tincanlaunch_get_creds_learninglocker($tincanlaunchsettings['tincanlaunchlrslogin'],
                 $tincanlaunchsettings['tincanlaunchlrspass'],
                 $url,
                 $expiry,
                 $registrationuuid
             );
+*/
             $basicauth = base64_encode($creds["contents"]["key"].":".$creds["contents"]["secret"]);
             break;
 
